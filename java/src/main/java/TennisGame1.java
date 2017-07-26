@@ -69,7 +69,7 @@ public class TennisGame1 implements TennisGame {
         return score.toString();
     }
 
-    public String setAnotherScore() {
+    public String setNormalScore() {
         int tempScore;
         StringBuilder score = new StringBuilder();
         for (int i = 1; i < 3; i++) {
@@ -104,7 +104,7 @@ public class TennisGame1 implements TennisGame {
         } else if (isMorethan3()) {
             score = setMorethan3Score();
         } else {
-            score = setAnotherScore();
+            score = setNormalScore();
         }
         return score;
     }
